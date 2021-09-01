@@ -88,7 +88,6 @@ systemd:
           -v /var/log:/var/log \
           -v /opt/cni/bin:/opt/cni/bin \
           $${KUBELET_IMAGE} \
-          --anonymous-auth=false \
           --authentication-token-webhook \
           --authorization-mode=Webhook \
           --bootstrap-kubeconfig=/etc/kubernetes/kubeconfig \
